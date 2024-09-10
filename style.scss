@@ -1,0 +1,41 @@
+$bgcolor: lightblue;
+$textcolor: purple;
+$fontsize: 18px;
+$primary_1: #A9CEF4;
+$primary_2: #36494E;
+$primary_3: #000000;
+$primary_4: #7EA0B7;
+$primary_5: #597081;
+$myFont: Helvetica, sans-serif;
+body{
+    background-color: $bgcolor;
+}
+h1{
+    font: $myFont;
+}
+.dropdown{
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}  
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: $primary_2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}  
+li a:hover {
+    background-color: red;
+}
+.dropdown li{
+    text-shadow: $primary_4;
+}
