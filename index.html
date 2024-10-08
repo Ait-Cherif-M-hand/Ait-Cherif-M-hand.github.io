@@ -3,35 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="dropdown">
-        <ul>
-            <li><a href="#"> Qui suis je ?</a></li>
-            <li><a href="#"> Projets</a></li>
-            <li><a href="#"></a>TBD</a></li>
-            <li><a href="#">TBD</a></li>
-        </ul>
-    </div>
-    <div class="presentation">
-        <div>
-        <h1>Qui suis-je?</h1>
+    <header>
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Qui suis-je?</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="https://github.com/Ait-Cherif-M-hand/" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/m%E2%80%99hand-ait-cherif-a25105291/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Qui suis-je?</h2>
         <p>
-            je suis un etudiant en L3 informatique passionne par les ordinateurs et les nouvelles technologies et surtout la programation.
+            Je suis un étudiant en L3 informatique passionné par les ordinateurs et les nouvelles technologies, surtout la programmation.
         </p>
+        <figure>
+            <img src="./pic.jpg" alt="Profile Picture">
+            <figcaption>Moi</figcaption>
+        </figure>
+        <blockquote>
+            <p>"The universe has a beginning, but no end. — Infinite."</p>
+        </blockquote>
+        <blockquote>
+            <p>"Tous ces moments se perdront dans l'oubli... comme... les larmes... dans la pluie."</p>
+        </blockquote>
+    </section>
+
+    <section id="projects">
+        <h2>Projets</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <h3>Pong</h3>
+                <p></p>
+                <a href="https://github.com/Ait-Cherif-M-hand/Pong-clone" target="_blank">Voir sur GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Snake</h3>
+                <p></p>
+                <a href="https://github.com/Ait-Cherif-M-hand/Snake-java" target="_blank">Voir sur GitHub</a>
+            </div>
         </div>
-        <div class="pfp">
-            <figure>
-                <img src="" alt="" width=" " height="">
-             </figure>
-        </div>
-        <cite>
-            The universe has a beginning, but no end. — Infinite. The stars, too, have a beginning, but their own power leads to their destruction. — Finite.
-        </cite>
-        <cite>
-            Tous ces moments se perdront dans l'oubli... comme... les larmes... dans la pluie. Il est temps de mouri.
-        </cite>
-    </div>
+    </section>
+
+    <footer>
+        <p>Contactez-moi: ait-cherif.mhand@outlook.com</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

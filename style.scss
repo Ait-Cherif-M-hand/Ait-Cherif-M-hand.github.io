@@ -1,41 +1,96 @@
-$bgcolor: lightblue;
-$textcolor: purple;
-$fontsize: 18px;
-$primary_1: #A9CEF4;
-$primary_2: #36494E;
-$primary_3: #000000;
-$primary_4: #7EA0B7;
-$primary_5: #597081;
-$myFont: Helvetica, sans-serif;
-body{
-    background-color: $bgcolor;
-}
-h1{
-    font: $myFont;
-}
-.dropdown{
+$bgcolor: #A9CEF4;
+$textcolor: #36494E;
+$fontfamily: 'Courier New', monospace;
 
-}
-ul {
-    list-style-type: none;
-    margin: 0;
+body {
+    background-color: $bgcolor;
+    color: $textcolor;
+    font-family: $fontfamily;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}  
-li {
-    float: left;
+    margin: 0;
 }
-li a {
-    display: block;
-    color: $primary_2;
+
+header {
+    background-color: $textcolor;
+    padding: 10px;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}  
-li a:hover {
-    background-color: red;
+    
+    h1 {
+        color: $bgcolor;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        background-color: darken($bgcolor, 10%);
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        color: $textcolor;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        border: 1px solid $textcolor;
+        border-radius: 4px;
+        background-color: lighten($bgcolor, 10%);
+        
+        &:hover {
+            background-color: red;
+        }
+    }
 }
-.dropdown li{
-    text-shadow: $primary_4;
+
+section {
+    padding: 20px;
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    figure img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .projects-grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .project {
+            background-color: lighten($textcolor, 20%);
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            margin: 10px;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            a {
+                color: $bgcolor;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: darken($bgcolor, 10%);
+    text-align: center;
+    padding: 10px;
 }

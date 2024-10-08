@@ -1,14 +1,11 @@
-document.addEventListener('DOMContentLoaded', function () {
-let container = document.getElementById("dropdown")
-let anchors = container.getElementsByTagName("a")
-for (item of anchors){
-      item.addEventListener('click', function (e){
-            e.preventDefault()
-            let cible = e.target.href
-            let rep = confirm()
-            if (rep){ 
-                window.open(cible) 
-            }
-        })
-    }
-    
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('mouseover', () => {
+            link.style.transform = "scale(1.1)";
+        });
+        link.addEventListener('mouseout', () => {
+            link.style.transform = "scale(1)";
+        });
+    });
+});
